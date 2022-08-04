@@ -25,5 +25,6 @@ internal class Program
             }
              return result;
          }
+           Console.Write("[" + string.Join(", ", UserWrite) + "]" + "->"+"[" + string.Join(", ", ResultArrey) + "]");
      }
 }
