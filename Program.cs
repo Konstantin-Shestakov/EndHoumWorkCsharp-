@@ -10,8 +10,7 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.Clear();
-        Console.WriteLine("Введите массив строк через пробел");
-        string[] UserWrite = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+        string[] UserWrite = {"-65", "5", "World", "China", "-25", "Donbass", ":-)", "Car"};
         string[] ResultArrey = Array(UserWrite).Split(", ", StringSplitOptions.RemoveEmptyEntries);
           string Array(string[] array)
         {
@@ -25,6 +24,6 @@ internal class Program
             }
              return result;
          }
-           Console.Write("[" + string.Join(", ", UserWrite) + "]" + "->"+"[" + string.Join(", ", ResultArrey) + "]");
+           Console.Write("[" + string.Join(", ", UserWrite) + "]" + " -> "+"[" + string.Join(", ", ResultArrey) + "]");
      }
 }
