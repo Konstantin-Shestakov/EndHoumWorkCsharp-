@@ -13,6 +13,17 @@ internal class Program
         Console.WriteLine("Введите массив строк через пробел");
         string[] UserWrite = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
         string[] ResultArrey = Array(UserWrite).Split(", ", StringSplitOptions.RemoveEmptyEntries);
-        
+          string Array(string[] array)
+        {
+             string result = "";
+            for (int i = 0; i < UserWrite.Length; i++)
+            {
+                if (UserWrite[i].Length <= 3)
+                {
+                    result = result + UserWrite[i]+ ", ";
+                }
+            }
+             return result;
+         }
      }
 }
